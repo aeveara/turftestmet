@@ -1,0 +1,427 @@
+/* CSS declarations go here */
+/* CSS declarations go here */
+
+/*
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+    and (orientation : portrait){}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { styles here}
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) { style here}
+*/
+
+
+@font-face {
+    font-family: cool;
+    src: url(/fonts/coolveticarg.ttf);   
+}
+
+@font-face {
+    font-family: limo;
+    src: url(/fonts/ChampagneLimousines.ttf);   
+}
+
+.turf-word{
+   font-family: cool;
+    font-size: 1rem;
+    color: #333333;  
+}
+
+.turf-title{
+   font-family: cool;
+    font-size: 1.5rem;
+    color: #333333;  
+}
+
+.turf-word-center{
+    font-family: cool;
+    font-size: 1rem;
+    color: #333333; 
+    text-align: center;
+}
+
+body{
+    margin: 0px;
+}
+
+.homepage-container, .player-stats-container, .playbook-container, .live-container{
+ width: 375px;
+/*    min-height: 667px;*/
+}
+
+.homepage-container ul{
+      display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+
+ul{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.playbook a, .turfterms a{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.player-stats a, .live a{
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+}
+
+.turf-word-center{
+    font-family: cool;
+    font-size: 1.5rem;
+    color: #333333; 
+    text-align: center;
+}
+
+.playbook{
+ background-color: #c1544c;
+    text-align: center;
+width: 187.5px;
+    height: 333px;
+    position: relative;
+}
+
+.turfterms{
+   background-color: #cae8e0; 
+    text-align: center;
+width: 187.5px;
+     height: 333px;
+    position: relative;
+}
+
+.player-stats{
+  background-color: #99c7b2;
+    position: relative;
+    text-align: center;
+width: 187.5px;
+     height: 333px;
+  position: relative; 
+}
+
+.player-stats img, .turfterms img, .playbook img{
+    width: 100px;
+}
+
+
+.setting img{
+    position: absolute;
+    width: 50px;
+    bottom:2px;
+    left: 2px;
+}
+
+
+.live{
+    background-color: #6e8f6e;
+    text-align: center;
+width: 187.5px;
+  height: 333px;
+    position: relative;
+}
+.live img{
+    width: 150px;
+}
+   
+
+/*PLAYER STATS*/
+.ps-bg{
+background-color: #c1544c;
+background-image: linear-gradient(to bottom, #c1544c, #6e8f6e, #99c7b2, #cae8e0  100%);
+padding: 5% 0;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  
+}
+.back-home{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 900;
+}
+
+.edit-profile-btn{
+    text-decoration: none;
+    color: #cccccc;
+    border: 3px solid #cccccc;
+    background: rgba(204, 204, 204, 0.5);
+    border-radius: 15px;
+    position: absolute;
+    font-family: cool;
+    padding: 1%;
+    top: 2px;
+    right: 2px;
+}
+
+
+
+.profile-pic, .edit-profile-pic, .edit-profile-form{
+   width: 200px;
+   
+}
+
+.ps-title{
+    background: #c1544c;
+    padding-left: 5%;
+}
+
+.ps-stat-one-box{
+       border: 3px solid #c1544c;
+    display: flex; 
+        height: 160px;
+}
+
+.ps-stats-one{
+   background-color:  #cc6666;
+width: 187.5px;
+    text-align: center;
+   padding: 15% 2% 2% 2%;
+
+}
+
+.ps-stats-one .square{
+    padding: 5%;
+        height: 30px;
+    width: 15px;
+        margin: 2%;
+}
+
+.ps-stats-two{
+    background-color:  #e8eae9;
+    border: 3px solid #cae8e0; 
+    padding: 2%;
+    height: 160px;
+    position: relative;
+}
+
+.ps-stats-two .turf-title{
+    text-align: center;
+}
+
+.go-to-btn{
+     text-decoration: none;
+    color: #333;
+    border: 3px solid #cccccc;
+    background: rgba(204, 204, 204, 0.7);
+    border-radius: 15px;
+    font-family: cool;
+    padding: 2%;
+    position: absolute;
+    right: 5px;
+    bottom: 20px;
+}
+
+
+
+
+/*LIVE */
+
+.live-container{
+    color: #333;
+    font-family: cool;
+    font-size: 1rem;
+    background: #92ac91;
+    position: relative;
+    
+}
+
+#myteam{
+    content: " ";
+}
+
+.live-container .turf-word{
+    padding: 2%;
+}
+
+.live-title{
+    text-align: center;
+    background: #6e8f6e;
+    padding: 3% 0;
+    font-size: 1.5rem;
+      color: #333;
+    font-family: cool;
+}
+
+.team-choice{
+  text-decoration: none;
+    color: #333;
+    border: 3px solid #cccccc;
+    background: rgba(204, 204, 204, 0.7);
+    border-radius: 10px;
+    font-family: cool;
+    padding: 1%;
+    position: absolute;
+    top: 5px;
+    right: 5%;
+}
+
+
+.notify{
+  text-decoration: none;
+    color: #333;
+    border: 3px solid #cccccc;
+    background: rgba(204, 204, 204, 0.7);
+    border-radius: 10px;
+    font-family: cool;
+    padding: 1%;  
+}
+
+.live-btns{
+    text-align: center;
+   margin: 5% 0; 
+}
+
+.live-stats{
+    background: #778976;
+    text-align: center;
+}
+
+.square{
+    font-family: cool;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 10px;
+    height: 15px;
+    width: 5px;
+    padding: 3%;
+    display: inline-block;
+}
+
+/*SETTINGS*/
+.settings-title{
+    text-align: center;
+    background: #99c7b2;
+    padding: 3% 0;
+}
+
+.settings-title .turf-title img{
+    width: 25px;
+}
+
+.settings-container{
+    background-color: #c9e7d7;
+    padding: 5% 0;
+     color: #333;
+    font-family: cool;
+    text-align: center;
+    
+}
+
+.settings-word{
+    text-align: center;
+    padding: 5% 0;
+}
+
+.settings-btn{
+  text-decoration: none;
+    color: #333;
+    border: 3px solid #cccccc;
+    background: rgba(204, 204, 204, 0.5);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: cool;
+    padding: 1% 3%;
+}
+
+.settings-bar{
+     background: #99c7b2;
+   border: 3px solid #99c7b2;
+}
+
+.settings-notifications{
+     background-color: #c9e7d7;
+    padding: 3% 0 5% 5%;
+display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select: none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #CCCCCC; border-radius: 10px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.1s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 20px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #99c7b2; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #CCCCCC; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 30px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #CCCCCC; border-radius: 10px;
+    transition: all 0.1s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+/*MAP*/
+
+.map-container {
+    display: none;
+  width: 375px;
+  max-width: 375px;
+      height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/*TURF TERMS*/
+
+.turfterms-title{
+    text-align: center;
+    padding: 70px 0 5%;
+}
+
+input[type="search" i] {
+    width: 80%;
+}
+

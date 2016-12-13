@@ -1,0 +1,449 @@
+<template name="chooseteam">
+    <div class="choose-team-title">
+  <a href="{{pathFor route='home'}}">
+    <img class="back-home" src="img/back-button.png">
+        </a>
+        <div class="turf-title">choose your team</div>
+    </div>
+  <div class="accordion">
+    <ul class="east-bg">
+        <div class="east-title">afc east</div>
+        <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title east">
+                <span>new england patriots</span>
+            </div>
+            <div class="accordion-content east-content">
+               Gillette Stadium<br>
+		      Foxborough, Massachusetts	
+                <div class="conf-logo"><img src="/img/patriots.svg"></div>
+                <button class="select-team ">choose as my team</button>
+                <div class="selected-team" id="set">my team</div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title east">
+                <span>new york jets</span>
+            </div>
+            <div class="accordion-content east-content">
+                MetLife Stadium<br>
+		          East Rutherford, New Jersey
+                <div class="conf-logo"><img src="/img/jets.svg"></div>
+                
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title east">
+                <span>buffalo bills</span>
+            </div>
+            <div class="accordion-content east-content">
+                Ralph Wilson Stadium<br>
+		Orchard Park, New York
+                <div class="conf-logo"><img src="/img/bills.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title east">
+                <span>miami dolphins</span>
+            </div>
+            <div class="accordion-content east-content">
+               New Miami Stadium<br>
+		Miami Gardens, Florida
+                <div class="conf-logo"><img src="/img/dolphins.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        </ul>
+    </div>
+<!--        END AFC EAST-->
+    <div class="accordion">
+        <ul class="west-bg">
+         <div class="west-title">afc west</div>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title west">
+                <span>denver broncos</span>
+            </div>
+            <div class="accordion-content west-content">
+                Sports Authority Field at Mile High<br>
+		Denver, Colorado
+                <div class="conf-logo"><img src="/img/broncos.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title west">
+                <span>kansas city chiefs</span>
+            </div>
+            <div class="accordion-content west-content">
+               Arrowhead Stadium<br>
+		Kansas City, Missouri
+                <div class="conf-logo"><img src="/img/chiefs.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title west">
+                <span>san diego chargers</span>
+            </div>
+            <div class="accordion-content west-content">
+                Qualcomm Stadium<br>
+		San Diego, California
+                <div class="conf-logo"><img src="/img/chargers.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title west">
+                <span>oakland raiders</span>
+            </div>
+            <div class="accordion-content west-content">
+               Oakland Coliseum<br>
+		Oakland, California
+                <div class="conf-logo"><img src="/img/raiders.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+             </ul>
+    </div>
+<!--        END AFC WEST-->
+    <div class="accordion">
+             <ul class="north-bg">
+         <div class="north-title">afc north</div>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title north">
+                <span>cincinnati bengals</span>
+            </div>
+            <div class="accordion-content north-content">
+                Paul Brown Stadium<br>
+		Cincinnati, Ohio
+                <div class="conf-logo"><img src="/img/bengals.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title north">
+                <span>baltimore ravens</span>
+            </div>
+            <div class="accordion-content north-content">
+                M &amp; T Bank Stadium<br>
+		Baltimore, Maryland
+                <div class="conf-logo"><img src="/img/ravens.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title north">
+                <span>pittsburgh steelers</span>
+            </div>
+            <div class="accordion-content north-content">
+               Heinz Field<br>
+		Pittsburgh, Pennsylvania
+                <div class="conf-logo"><img src="/img/steelers.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title north">
+                <span>clevland browns</span>
+            </div>
+            <div class="accordion-content north-content">
+                FirstEnergy Stadium<br>
+		Cleveland, Ohio
+                <div class="conf-logo"><img src="/img/browns.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+                  </ul>
+    </div>
+<!--        END AFC NORTH-->
+    <div class="accordion">
+                 <ul class="south-bg">
+         <div class="south-title">afc south</div>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title south">
+                <span>tennessee titans</span>
+            </div>
+            <div class="accordion-content south-content">
+                Nissan Stadium<br>
+		Nashville, Tennessee
+                <div class="conf-logo"><img src="/img/titans.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title south">
+                <span>jacksonville jaguars</span>
+            </div>
+            <div class="accordion-content south-content">
+                EverBank Field<br>
+		Jacksonville, Florida
+                <div class="conf-logo"><img src="/img/jaguars.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title south">
+                <span>houston texas</span>
+            </div>
+            <div class="accordion-content south-content">
+                NRG Stadium<br>
+		Houston, Texans
+                <div class="conf-logo"><img src="/img/texans.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title south">
+                <span>indianapolis colts</span>
+            </div>
+            <div class="accordion-content south-content">
+               Lucas Oil Stadium<br>
+		Indianapolis, Indiana
+                <div class="conf-logo"><img src="/img/colts.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+                       </ul>
+    </div>
+<!--        END AFC SOUTH-->
+<!--        END AFC-->
+        
+<!--        BEGIN NFC-->
+    <div class="accordion">
+                       <ul class="east-bg">
+         <div class="east-title">nfc east</div>
+          <li>
+            <input type="radio" name="select" class="accordion-select" checked />
+            <div class="accordion-title east">
+                <span>philadelphia eagles</span>
+            </div>
+            <div class="accordion-content east-content">
+               Lincoln Financial Field<br>
+		Philadelphia, Pennsylvania
+                <div class="conf-logo"><img src="/img/eagles.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title east">
+                <span>new york giants</span>
+            </div>
+            <div class="accordion-content east-content">
+               MetLife Stadium<br>
+		East Rutherford, New Jersey
+                <div class="conf-logo"><img src="/img/giants.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title east">
+                <span>washington redskins</span>
+            </div>
+            <div class="accordion-content east-content">
+               FedExField<br>
+	Landover, Maryland
+                <div class="conf-logo"><img src="/img/redskins.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title east">
+                <span>dallas cowboys</span>
+            </div>
+            <div class="accordion-content east-content">
+               AT&amp;T Stadium<br>
+		Arlington, Texas
+                <div class="conf-logo"><img src="/img/dallas.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+                            </ul>
+    </div>
+<!--        END NFC EAST-->
+    <div class="accordion">
+                          <ul class="west-bg">
+         <div class="west-title">nfc west</div>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title west">
+                <span>arizona cardinals</span>
+            </div>
+            <div class="accordion-content west-content">
+              University of Phoenix Stadium<br>
+		Glendale, Arizona
+                <div class="conf-logo"><img src="/img/cardinals.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title west">
+                <span>san francisco 49ers</span>
+            </div>
+            <div class="accordion-content west-content">
+                Levi’s Stadium<br>
+		Santa Clara, California
+                <div class="conf-logo"><img src="/img/49ers.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title west">
+                <span>seattle seahawks</span>
+            </div>
+            <div class="accordion-content west-content">
+                CenturyLink Field<br>
+		Seattle, Washington
+                <div class="conf-logo"><img src="/img/seahawks.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title west">
+                <span>los angeles rams</span>
+            </div>
+            <div class="accordion-content west-content">
+                formerly the St. Louis Rams<br>
+	Los Angeles Memorial Coliseum<br>
+	Los Angeles, California
+                <div class="conf-logo"><img src="/img/rams.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+                                 </ul>
+    </div>
+<!--        END NFC WEST-->
+    <div class="accordion">
+                             <ul class="north-bg">
+        <div class="north-title">nfc north</div>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title north">
+                <span>green bay packers</span>
+            </div>
+            <div class="accordion-content north-content">
+                Lambeau Field<br>
+		Green Bay, Wisconsin
+                <div class="conf-logo"><img src="/img/packers.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title north">
+                <span>detroit lions</span>
+            </div>
+            <div class="accordion-content north-content">
+               Ford Field<br>
+		Detroit, Michigan
+                <div class="conf-logo"><img src="/img/lions.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title north">
+                <span>minnesota vikings</span>
+            </div>
+            <div class="accordion-content north-content">
+                U.S. Bank Stadium<br>
+		Minneapolis, Minnesota
+                <div class="conf-logo"><img id="vikings" src="/img/vikings.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title north">
+                <span>chicago bears</span>
+            </div>
+            <div class="accordion-content north-content">
+               Soldier Field<br>
+		Chicago, Illinois
+                <div class="conf-logo"><img src="/img/bears.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+                                      </ul>
+    </div>
+<!--        END NFC NORTH-->
+    <div class="accordion">
+                             <ul class="south-bg">
+        <div class="south-title">nfc south</div>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title south">
+                <span>atlanta falcons</span>
+            </div>
+            <div class="accordion-content south-content">
+                Georgia Dome<br>
+		Atlanta, Georgia
+                <div class="conf-logo"><img src="/img/falcons.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title south">
+                <span>carolina panthers</span>
+            </div>
+            <div class="accordion-content south-content">
+                Bank of America Stadium<br>
+		Charlotte, North Carolina
+                <div class="conf-logo"><img src="/img/panthers.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title south">
+                <span>tampa bay buccaneers</span>
+            </div>
+            <div class="accordion-content south-content">
+                Raymond James Stadium<br>
+		Tampa, Florida
+                <div class="conf-logo"><img src="/img/bucs.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+        <li>
+            <input type="radio" name="select" class="accordion-select" />
+            <div class="accordion-title south">
+                <span>new orleans saints</span>
+            </div>
+            <div class="accordion-content south-content">
+                Mercedes-Benz Superdome<br>
+                New Orleans, Louisiana
+                <div class="conf-logo"><img src="/img/saints.svg"></div>
+            </div>
+            <div class="accordion-separator"></div>
+        </li>
+<!--        END NFC SOUTH-->
+        
+    </ul>
+</div>   
+
+</template>

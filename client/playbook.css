@@ -1,0 +1,197 @@
+/*PLAYBOOK*/
+
+.playbook-container, .playbook-container a {
+    color: #333;
+    font-family: cool;
+}
+
+
+.playbook-title{
+   text-align: center; 
+}
+
+.sub-title{
+    font-family: limo;
+    color: #333;
+}
+
+.basic-playbook{
+background: #cc6666;    
+border: 3px solid #c1544c;
+    
+
+}
+
+.basic{
+background: #cc6666;    
+border: 3px solid #c1544c;
+padding: 2% 20px 2%;
+    width: 368px;
+    font-size: 1.5rem;
+    
+
+}
+
+.pb-accordion-content ul{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.int-playbook{
+     background:  #cae8e0;    
+border: 3px solid  #80aa9f;
+height: 51px;
+    padding-left: 20px;
+    padding-top: 29px;
+}
+
+.adv-playbook{
+background: #6e8f6e;    
+border: 3px solid #778976;
+height: 51px;
+    padding-left: 20px;
+    padding-top: 29px;
+}
+
+
+.pb-accordion {
+  
+    font-family: cool;
+    border-color: #505050;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 0px;
+    margin: 0 auto;
+    height: auto;
+    width: 375px;
+}
+
+.pb-accordion > ul > li,
+.pb-accordion-title,
+.pb-accordion-content,
+.pb-accordion-separator {
+    float: none;
+}
+
+.pb-accordion > ul > li {
+    background-color: #cc6666;  
+    margin-right: -0px;
+    margin-bottom: -290px;
+}
+
+
+
+
+
+.pb-accordion-select:checked ~ .pb-accordion-separator {
+    margin-right: 0px;
+    margin-bottom: 290px;
+}
+
+.pb-accordion-title,
+.pb-accordion-select  {
+/*    background-color: #2d2d2d;*/
+    color: #333;
+    width: 375px;
+    height: 80px;
+/*    font-size: 15px;*/
+}
+
+.pb-accordion-title span {
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
+.pb-accordion-select:hover ~ .pb-accordion-title,
+.pb-accordion-select:checked ~ .pb-accordion-title {
+    background-color: #c1544c;
+}
+
+.pb-accordion-select:hover ~  .int-playbook,
+.pb-accordion-select:checked ~  .int-playbook{
+    background-color: #80aa9f;
+}
+
+.pb-accordion-select:hover ~ .adv-playbook,
+.pb-accordion-select:checked ~ .adv-playbook {
+    background-color: #778976;
+}
+
+
+
+.pb-accordion-title span, .pb-accordion-title div {	
+    transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    margin-bottom: 0px;
+/*    line-height: 40px;*/
+}
+
+.pb-accordion-content {
+/*    background-color: #3e3e3e;*/
+    color: #333;
+    height: 234px;
+    width: 375px;
+    padding: 28px;
+}
+
+.pb-accordion-title,
+.pb-accordion-select:checked ~ .pb-accordion-content {
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+/* Do not change following properties, they aren't 
+generated automatically and are common for each slider. */
+.pb-accordion {
+    overflow: hidden;
+}
+
+.pb-accordion > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 101%;
+}
+
+.pb-accordion > ul > li,
+.pb-accordion-title {
+    position: relative;
+}
+
+.pb-accordion-select {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.pb-accordion-title span {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.pb-accordion-content {
+    position: relative;
+    overflow: auto;
+}
+
+.pb-accordion-separator {
+    transition: margin 0.3s ease 0.1s;
+    -o-transition: margin 0.3s ease 0.1s;
+    -moz-transition: margin 0.3s ease 0.1s;
+    -webkit-transition: margin 0.3s ease 0.1s;
+}
+

@@ -1,0 +1,106 @@
+<template name="timer">
+
+ <div class="counter">time out: {{getCountdown}} seconds</div>
+
+</template>
+
+<template name="timeout">
+    <div class="timeout-container">
+    <div class="timeout" id="timeout">
+    <img src="/img/timeout.svg"><br>
+        {{>timer}}
+<!--        <div>time out: {{>timer}} seconds</div>-->
+        <ul>
+    <li> <a href="#" id="brb">brb</a></li>
+    <li><a href="{{pathFor route='quiz'}}">restart quiz</a></li>
+    <li><a href="{{pathFor route='playbook'}}">quit</a></li>
+    <li><a href="#" id="b2q">return to quiz</a></li>
+        </ul>
+    </div>
+    </div>
+</template>
+
+
+
+<template name="quiz">
+    <div class="quiz-title">
+<a href="{{pathFor route='timeout'}}"><button class="to-btn">time out</button></a>
+    </div>
+   
+    <div class="quiz-container" >
+        {{#each questions}}
+     
+         <div class="turf-title" id="question">{{question}} </div>
+
+     <form>
+       <ul>
+       {{#each answers}}
+     <li class="{{checked}}">
+
+       <input type="radio" {{checked}} id="{{_id}}" name="choice"  value="{{choice}}" />
+      <label for="{{_id}}" >{{choice}}</label> 
+           </li>
+      
+       {{ /each}}
+    </ul>
+        </form>
+        <div class="correct" id="correct">{{correct}}</div>
+{{/each}}
+</div>
+    
+    <div class="quiz-bottom">  <a href="{{pathFor route='postquiz'}}" class="quiz-btn">submit</a></div>
+    
+</template>
+
+<template name="quizCount">
+    {{#if totalQuiz}}
+    you got {{completedQuiz}} out of {{totalQuiz}} correct!
+    {{/if}}
+</template>
+
+
+<template name="postquiz">
+    
+    <div class="post-container">
+        <div class="turf-title">nice pass for a first down!</div>
+    <img src="/img/ppl.png">
+        <div class="turf-title">{{> quizCount}}</div>
+       <ul>
+           <li><a href="{{pathFor route='review'}}">review answers</a></li>
+           <li> <a href="{{pathFor route='lessontwo'}}">next play</a></li>
+            <li><a href="{{pathFor route='home'}}">home</a></li>
+        </ul>
+    </div> 
+</template>
+
+<template name="postquizlose">
+    
+    <div class="post-container">
+        <div class="turf-title">just short! you'll get them next drive</div>
+    <img src="/img/ppl.png">
+        <div class="turf-title">{{> quizCount}}</div>
+       <ul>
+            <li><a href="{{pathFor route='quiz'}}">try again</a></li>
+           <li><a href="{{pathFor route='review'}}">review answers</a></li>
+           <li> <a href="{{pathFor route='lesson'}}">next play</a></li>
+            <li><a href="{{pathFor route='home'}}">home</a></li>
+        </ul>
+    </div> 
+</template>
+
+<template name="review">
+    <div class="review-title turf-title">
+            <a href="{{pathFor route='postquiz'}}">
+    <img class="back-home" src="img/back-button.png">
+        </a>
+        let's review</div>
+    <div class="review-container">
+        <ul>
+    {{#each questions}}
+    <li class="turf-word">{{question}}</li>
+         <li class=" answer turf-word">your answer :  </li>
+         <li class=" answer turf-word">correct answer : {{correct}}</li>
+    {{/each}}
+        </ul>
+        </div>
+</template>

@@ -1,0 +1,39 @@
+<!--
+<template name="terms">
+    
+    {{term}}
+</template>
+
+<template name="definitions">
+
+    {{definition}}
+ 
+</template>
+-->
+
+<template name="turfterms">
+    <div class="turfterms-title">
+    <a href="{{pathFor route='home'}}">
+    <img class="back-home" src="img/back-button.png">
+        </a>
+   
+
+    <input type=search name=s>
+         </div>
+    <div class="turfterms-container">
+        <ul class="terms-container">
+          {{#each glossary}}
+        <li class="hex" >
+           
+            <div class="front"><div class="term-word">{{term}}</div></div>
+             <div class="back"><a class="out" href="{{pathFor route='turfterms'}}"><img  src="/img/back-x.png"></a>
+    <div class="define-word">{{definition}} </div>
+            </div>
+           
+            </li>
+            {{/each}}
+          
+        </ul>
+
+    </div>
+</template>

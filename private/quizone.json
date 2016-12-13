@@ -1,0 +1,134 @@
+  {
+    "questions":
+    [
+        {
+           
+            "question":"What does the NFL stand for?",
+          "correct": "National Football League",
+            "answers": [
+                {"choice":  "National Football League" },
+              {"choice":   "Notorious Fancy Legends"},
+               { "choice":  "National Futbol League"},
+               { "choice":  "National Freeloaders League"}
+            ]
+        },
+        {
+             
+        "question":"How many teams are in the NFL?", 
+            "correct": "32",
+            "answers": [
+                 {"choice":  "34" },
+              {"choice":   "48"},
+               { "choice":  "32"},
+               { "choice":  "56"}
+            ]
+         
+        },
+        {
+           
+        "question":"American Football is different than both ____ other types of football", 
+             "correct": "Soccer and College Football",
+            "answers": [
+                {"choice":  "College Football and hacky sack" },
+              {"choice":   "Soccer and College Football"},
+               { "choice":  "Hockey and Soccer"},
+               { "choice":  "College Football and Volleyball"}
+            ]
+           
+         
+        },
+        {
+           
+        "question":"What is the name of this app?", 
+            "correct": "Talk Turf",
+             "answers": [
+                   {"choice":  "Turf Talking" },
+              {"choice":   "Sideline Speaking"},
+               { "choice":  "Court Chat"},
+               { "choice":  "Talk Turf"}
+            ]
+         
+        },
+        {
+            
+        "question":"What days of the week can you watch the game?", 
+              "correct": "Sunday, Monday, Thursday",
+             "answers": [
+                  {"choice":  "Sunday, Monday, Thursday" },
+              {"choice":   "Monday, Wednesday, Friday"},
+               { "choice":  "Tuesday, Thursday, Saturday"},
+               { "choice":  "Sunday only"}
+            ]
+          
+         
+        },
+        {
+             
+        "question":"How many plays must you complete to score a touchdown with this app?", 
+            "correct": "10",
+            "answers": [
+                  {"choice":  "12" },
+              {"choice":   "10"},
+               { "choice":  "5"},
+               { "choice":  "1"}
+            ]
+            
+         
+        },
+        {
+            
+        "question":"Where can you find the list of teams in their respective conferences and divisions?", 
+            "correct": "Pick your team",
+             "answers": [
+                  {"choice":  "Playbook" },
+              {"choice":   "Glossary"},
+               { "choice":  "Player Stats"},
+               { "choice":  "Pick your team"}
+            ]
+            
+         
+        },
+        {
+            
+        "question":"Each conference is divided into 4 divisions. What are they?",
+            "correct": "North, South, East, and West",
+            "answers": [
+                 {"choice":  "North, South, East, and West" },
+              {"choice":   "Top, Bottom, Left, Right"},
+               { "choice":  "Ladder 1, Ladder 2, Ladder 3, Ladder 4"},
+               { "choice":  "Northeast, Southeast, Northwest, Southwest"}
+            ]
+            
+         
+        },
+        {
+            
+        "question":"What are the two NFL conference names?",
+             "correct": "American and National",
+            "answers": [
+                  {"choice":  "Art and Noodles " },
+              {"choice":   "American and National"},
+               { "choice":  "Aardvark and Neptune"},
+               { "choice":  "American and Norwegian"}
+           
+            ]
+           
+         
+        },
+        {
+             
+        "question":"This app is teaching me about",
+            "correct": "Football",
+             "answers": [
+                  {"choice":  "Rugby" },
+              {"choice":   "Tennis"},
+               { "choice":  "Football"},
+               { "choice":  "Hockey "}
+            ]
+
+        }
+        
+    ]
+}
+        
+

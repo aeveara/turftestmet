@@ -1,0 +1,265 @@
+.term-word{
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    z-index: 800;
+    font-family: cool;
+   width: 40px; 
+        font-size: .7rem;
+}
+
+.define-word{
+    text-align: center;
+    padding: 100px 0;
+width: 375px;
+/*    border: 1px solid black;*/
+    z-index: 900;
+    font-family: cool; 
+}
+/*
+.define-word > * {
+    margin-top: 200px;
+}
+*/
+.turfterms-container{
+     max-width: 375px;
+    width: 375px;
+    
+}
+
+.terms-container{
+
+     padding: 0;
+  margin: 0 auto;
+  *zoom: 1;
+}
+
+.terms-container:before,
+.terms-container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.terms-container:after {
+  clear: both;
+}
+
+.hex {
+  float: left;
+  margin-bottom: -35px;
+  margin-left: 20px;
+  display: block;
+  height: 70px;
+  width: 40.41px;
+  position: relative;
+
+  background: transparent;
+}
+.hex:before {
+  content: "";
+  display: block;
+  height: 70px;
+  width: 40.41px;
+  background: transparent;
+  -webkit-transform: rotateZ(-60deg);
+  -moz-transform: rotateZ(-60deg);
+  -moz-transform-style: preserve-3d;
+}
+.hex:after {
+  content: "";
+  display: block;
+   height: 70px;
+  width: 40.41px;
+  background: transparent;
+  -webkit-transform: rotateZ(60deg);
+  -moz-transform: rotateZ(60deg);
+  -moz-transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+}
+/*
+.hexa:hover .front {
+  -webkit-transform: translateZ(-1px) rotateY(180deg);
+  -moz-transform: translateZ(-1px) rotateY(180deg);
+  z-index: 800;
+}
+.hexa:hover .back {
+  -webkit-transform: translateZ(1px) rotateY(0deg);
+  -moz-transform: translateZ(1px) rotateY(0deg);
+  z-index: 900;
+}
+*/
+.hex .front {
+  display: block;
+    height: 70px;
+  width: 40.41px;
+  position: relative;
+
+  background: #c1544c;
+  -webkit-transition: all 600ms;
+  -moz-transition: all 600ms;
+  transition: all 600ms;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateZ(1px) rotateY(0deg);
+  -moz-transform: translateZ(1px) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+/*
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+*/
+  z-index: 1;
+}
+.hex .front:before {
+  content: "";
+  display: block;
+    height: 70px;
+  width: 40.41px;
+  background: #c1544c;
+  -webkit-transform: rotateZ(-60deg);
+  -moz-transform: rotateZ(-60deg);
+  -moz-transform-style: preserve-3d;
+}
+.hex .front:after {
+  content: "";
+  display: block;
+    height: 70px;
+  width: 40.41px;
+  background: #c1544c;
+  -webkit-transform: rotateZ(60deg);
+  -moz-transform: rotateZ(60deg);
+  -moz-transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+}
+.hex .back {
+  display: none;
+  height: 667px;
+  width: 375px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+     z-index: 900;
+     background-color: rgba(51, 51, 51, .5);
+     
+   
+    
+/*
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+*/
+    
+}
+
+.bg-poly{
+    width: 375px;
+    position: relative;
+    z-index: 800;
+}
+
+
+.hex-define{
+    fill: #cc6666;
+    stroke: #c1544c;
+    stroke-width: 3px;
+    position: relative;
+    z-index: 900;
+}
+
+.out{
+    position: absolute;
+        top: 1%;
+    right: 15%;
+    z-index: 900;
+    display: none;
+}
+
+
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/*
+.hex.even {
+    margin-top: 35px;
+   
+}
+*/
+
+.back .redgon{
+   background-image: url('/img/polygonred.svg');
+    background-repeat: no-repeat;
+    
+}
+
+ .bluegon{
+  background-image: url('/img/polygonblue.svg'); 
+     background-repeat: no-repeat;
+}
+
+ .greengon{
+   background-image: url('/img/polygongreen.svg'); 
+     background-repeat: no-repeat;
+}
+
+ .foamgon{
+   background-image: url('/img/polygonfoam.svg');
+     background-repeat: no-repeat;
+}
+
+.hex:nth-child(2n){
+    margin-top: 35px;
+}
+
+.hex:nth-child(2) > .front, .hex:nth-child(4) > .front, .hex:nth-child(6) > .front, .hex:nth-child(14) > .front, .hex:nth-child(16) > .front, .hex:nth-child(18) > .front, .hex:nth-child(26) > .front, .hex:nth-child(28) > .front, .hex:nth-child(30) > .front, .hex:nth-child(38) > .front, .hex:nth-child(40) > .front, .hex:nth-child(42) > .front, .hex:nth-child(50) > .front{
+     background-color: #cae8e0;
+}
+
+.hex:nth-child(2) > .front:before, .hex:nth-child(4) > .front:before, .hex:nth-child(6) > .front:before, .hex:nth-child(14) > .front:before, .hex:nth-child(16) > .front:before, .hex:nth-child(18) > .front:before,.hex:nth-child(26) > .front:before, .hex:nth-child(28) > .front:before, .hex:nth-child(30) > .front:before, .hex:nth-child(38) > .front:before, .hex:nth-child(40) > .front:before, .hex:nth-child(42) > .front:before, .hex:nth-child(50) > .front:before {
+     background-color: #cae8e0;
+}
+.hex:nth-child(2) > .front:after, .hex:nth-child(4) > .front:after, .hex:nth-child(6) > .front:after, .hex:nth-child(14) > .front:after, .hex:nth-child(16) > .front:after, .hex:nth-child(18) > .front:after,  .hex:nth-child(26) > .front:after, .hex:nth-child(28) > .front:after, .hex:nth-child(30) > .front:after, .hex:nth-child(38) > .front:after, .hex:nth-child(40) > .front:after, .hex:nth-child(42) > .front:after, .hex:nth-child(50) > .front:after  {
+     background: #cae8e0;
+}
+
+.hex:nth-child(7) > .front, .hex:nth-child(9) > .front, .hex:nth-child(11) > .front, .hex:nth-child(19) > .front, .hex:nth-child(21) > .front, .hex:nth-child(23) > .front, .hex:nth-child(31) > .front, .front, .hex:nth-child(33) > .front, .hex:nth-child(35) > .front, .hex:nth-child(43) > .front, .hex:nth-child(45) > .front, .hex:nth-child(47) > .front{
+    background: #6e8f6e; 
+}
+.hex:nth-child(7) > .front:before, .hex:nth-child(9) > .front:before, .hex:nth-child(11) > .front:before, .hex:nth-child(19) > .front:before,
+.hex:nth-child(23) > .front:before, .hex:nth-child(21) > .front:before, .hex:nth-child(31) > .front:before, .hex:nth-child(33) > .front:before, .hex:nth-child(35) > .front:before, .hex:nth-child(43) > .front:before, .hex:nth-child(45) > .front:before, .hex:nth-child(47) > .front:before{
+    background: #6e8f6e; 
+}
+
+.hex:nth-child(7) > .front:after, .hex:nth-child(9) > .front:after, .hex:nth-child(11) > .front:after, .hex:nth-child(19) > .front:after, .hex:nth-child(21) > .front:after, .hex:nth-child(23) > .front:after, .hex:nth-child(31) > .front:after, .hex:nth-child(33) > .front:after, .hex:nth-child(35) > .front:after, .hex:nth-child(43) > .front:after, .hex:nth-child(45) > .front:after, .hex:nth-child(47) > .front:after{
+    background: #6e8f6e; 
+}
+
+.hex:nth-child(8) > .front, .hex:nth-child(10) > .front, .hex:nth-child(12) > .front, .hex:nth-child(20) > .front, .hex:nth-child(22) > .front, .hex:nth-child(24) > .front, .hex:nth-child(32) > .front, .hex:nth-child(34) > .front, .front, .hex:nth-child(36) > .front,  .hex:nth-child(44) > .front, .hex:nth-child(46) > .front, .hex:nth-child(48) > .front{
+     background-color: #99c7b2;
+}
+
+.hex:nth-child(8) > .front:before, .hex:nth-child(10) > .front:before, .hex:nth-child(12) > .front:before, .hex:nth-child(20) > .front:before, .hex:nth-child(22) > .front:before, .hex:nth-child(24) > .front:before, .hex:nth-child(32) > .front:before, .hex:nth-child(34) > .front:before, .hex:nth-child(36) > .front:before,  .hex:nth-child(44) > .front:before, .hex:nth-child(46) > .front:before, .hex:nth-child(48) > .front:before{
+     background-color: #99c7b2;
+}
+.hex:nth-child(8) > .front:after, .hex:nth-child(10) > .front:after, .hex:nth-child(12) > .front:after, .hex:nth-child(20) > .front:after, .hex:nth-child(22) > .front:after, .hex:nth-child(24) > .front:after, .hex:nth-child(32) > .front:after, .hex:nth-child(34) > .front:after, .hex:nth-child(36) > .front:after,  .hex:nth-child(44) > .front:after, .hex:nth-child(46) > .front:after, .hex:nth-child(48) > .front:after {
+     background: #99c7b2;
+}
+
+/*BACK*/
+
+.hex.back .hex-define:nth-child(8), .hex-define:nth-child(10), .hex-define:nth-child(12), .hex-define:nth-child(20), .hex-define:nth-child(22), .hex-define:nth-child(24), .hex-define:nth-child(32), .hex-define:nth-child(34), .hex-define:nth-child(36), .hex-define:nth-child(44), .hex-define:nth-child(46), .hex-define:nth-child(48) {
+    fill: #c9e7d7;
+    stroke: #99c7b2; 
+}
+

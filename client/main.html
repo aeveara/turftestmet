@@ -1,0 +1,217 @@
+<body>
+    {{> sAlert}}
+   
+</body>
+<template name="home">
+   <div class="homepage-container">
+<ul>
+            <li class="playbook" > 
+               <a href="{{pathFor route='playbook'}}">
+      <img src="/img/playbook.svg">
+                <br>
+<span class="turf-word-center">playbook</span>
+                    </a>
+               </li>
+            
+           <li class="turfterms">
+              <a href="{{pathFor route='turfterms'}}">
+    <img src="/img/turfterms.png"> 
+                <br>
+<span class="turf-word-center">turf terms</span>
+                   </a>
+             </li> 
+      <li class="player-stats"> 
+       <a href="{{pathFor route='playerstats'}}">
+<span class="turf-word-center">player stats</span>
+                <br>
+    <img src="/img/playerstat.png"> 
+            </a>
+            </li>
+     <a class="setting" href="{{pathFor route='settings'}}"><img src="/img/setting.png"></a>
+    
+    <li  class="live"> 
+      <a href="{{pathFor route='live'}}">
+    <span class="turf-word-center">let's get live!</span>
+                <br>
+    <img src="/img/live.svg"> 
+            </a>
+           </li> 
+            </ul>
+</div>
+</template>
+
+<template name="playbook">
+    <div class="playbook-container">
+    <a href="{{pathFor route='home'}}">
+    <img class="back-home" src="img/back-button.png">
+        </a>
+        <div class="playbook-title" ><img src="/img/playbook.png"><br>your playbook</div>
+        
+        <div class="pb-accordion">
+            <ul>
+             <li>
+            <input type="radio" name="select" class="pb-accordion-select" />
+                 <div class="basic-playbook pb-accordion-title" ><span> waterboy<div class="sub-title">basic lessons</div></span></div> 
+            <div class="pb-accordion-content">
+              <ul>
+                  <li><a href="{{pathFor route='lesson'}}" ><div class="turf-title basic">play one</div></a></li>
+                  <li><a href="{{pathFor route='lessontwo'}}" ><div class="turf-title basic">play two</div></a></li>
+                  <li><div class="turf-title basic">play three</div></li>
+                  <li><div class="turf-title basic">play four</div></li>
+                  <li><div class="turf-title basic">play five</div></li>
+                  <li><div class="turf-title basic">play six</div></li>
+                  <li><div class="turf-title basic">play seven</div></li>
+                  <li><div class="turf-title basic">play eight</div></li>
+                  <li><div class="turf-title basic">play nine</div></li>
+                  <li><div class="turf-title basic">play ten</div></li>
+                </ul>
+            </div>
+            <div class="pb-accordion-separator"></div>
+        </li>
+
+            </ul>
+        </div>
+       
+   <!--                END BEGINNER-->
+        
+        <div class="int-playbook">practice squad<div class="sub-title">intermediate lessons</div></div>
+    <div class="adv-playbook">pro<div class="sub-title">advance lessons</div></div>  
+    </div>
+</template>
+
+
+<template name="playerstats">
+    <div class="player-stats-container">
+         
+        <div class="ps-bg">
+            <a href="{{pathFor route='home'}}">
+    <img class="back-home" src="img/back-button.png">
+        </a>
+        <a class="edit-profile-btn" href="{{pathFor route='editprofile'}}">
+            edit profile
+            </a>
+            <img class="profile-pic" src="/img/profile-pic.png">
+            <div class="turf-word-center">Franny Football</div>    
+        </div>
+        <div class="turf-title ps-title">Player Stats</div>
+        <div class="ps-stat-one-box">
+        <div class="ps-stats-one">
+            <div class="square"> # </div><div class="square"> # </div>
+             <div class="turf-word">touchdowns!</div>
+             </div>
+         <div class="ps-stats-one">
+             <div class="square"> # </div><div class="square"> # </div>
+            <div class="turf-word">total completions</div> 
+        </div>
+        </div>
+         <div class="ps-stats-two">
+            <div class="turf-word">next lesson:</div> 
+             <br>
+             <div class="turf-title">Play 2: The Playing Field</div>
+             <a class="go-to-btn" href="{{pathFor route='lessontwo'}}">go to current play</a>
+        </div>
+        
+    </div>
+</template>
+<template name="editprofile">
+    <div class="ps-bg">
+        <a href="{{pathFor route='playerstats'}}">
+    <img class="back-home" src="img/back-button.png">
+        </a>
+        <img class="edit-profile-pic" src="/img/upload.png">
+        <br>
+        <img class="edit-profile-form" src="/img/profile-form.png">
+    </div>
+</template>
+
+
+<template name="live">
+    
+    <a href="{{pathFor route='home'}}">
+    <img class="back-home" src="img/back-button.png">
+        </a>
+        <div class="live-title">let's get live</div>
+    <div class="live-container">
+        <a class="team-choice" href="{{pathFor route='chooseteam'}}">choose your team</a><br><br>
+        <div class="turf-word">team name:{{myteam}}</div>
+        <div class="live-stats">
+            <div class="turf-word">current record</div>
+               <div class="square"> # </div> <div class="square"> # </div>
+          </div>
+        <div class="live-stats">
+  <div class="turf-word">last game score</div>
+    <div class="square"> # </div> <div class="square"> # </div>
+        </div>
+        <div class="turf-word">next game:</div>
+       <div class="live-btns"> <a class="notify" href="{{pathFor route='settings'}}">set alarm</a>
+           <a class="notify" href="{{pathFor route='settings'}}">set notifications</a></div>
+        <div class="live-title">what happened last game?</div>
+        <div class="live-stats">
+             <div class="square"> # </div> <div class="square"> # </div>
+            <div class="turf-word">score</div>
+        <div class="highlights"> High lights. We only makin' the highlights. Tell my mama, tell my mama, that I only want my whole life to only be highlights.Can we play that back one time?And after that night I'm gon' wanna play shit back, I don't know Sometimes I'm wishin' that my dick had GoPro.So I could play that shit back in slo-mo. I just shot an amateur video; I think I should go pro. We only makin' the highlights.
+            </div>  
+        </div>
+        <div class="live-title">the dream stream</div>
+        insert live streaming feed here
+    </div>
+</template>
+
+<template name="settings">
+    <div class="settings-title">
+     <a href="{{pathFor route='home'}}">
+    <img class="back-home" src="img/back-button.png">
+        </a>
+        <div class="turf-title"><img src="/img/setting.png"> settings</div>
+    </div>
+    <div class="settings-container">
+        <a href="{{pathFor route='chooseteam'}}" class="settings-btn">choose your team</a>
+        <div class="turf-word settings-word">don't know your team?<br>that is okay!<br>you can pick later</div>
+        <a href="#" class="settings-btn">use geolocation to find my team</a>
+        {{> map}}
+         </div>
+    <div class="settings-bar"></div>
+        <div class="settings-notifications">
+        <div class="turf-title">notifications</div> <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+            </div>
+    <div class="settings-notifications">
+        <div class="turf-title">post game alert</div>
+            <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked>
+    <label class="onoffswitch-label" for="myonoffswitch2">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+    </div>
+    <div class="settings-notifications">
+        <div class="turf-title">set alarm for game time</div>
+            <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked>
+    <label class="onoffswitch-label" for="myonoffswitch3">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+   </div>     
+   
+</template>
+
+
+<template name="map">
+ <div class="map-container">
+    {{#unless geolocationError}}
+      {{> googleMap name="map" options=mapOptions}}
+    {{else}}
+      Geolocation failed: {{geolocationError}}
+    {{/unless}}
+  </div>
+</template>
+
+
